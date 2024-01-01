@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rubik&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="body-container">
+        <header>
+            <div id="header-container">
+                <img src="/src/config/logo_1.png" alt="" width="200" id="logo_png">
+    
+                <h1 id="header-element">Online Expo-2024</h1>
+                <nav>
+                    <ul id="nav-list">
+                        <li class="list-links"><a href="/src/pages/index/index.html" id="links">Login</a></li>
+                        <li class="list-links"><a href="/src/pages/Online_Expo/Online_Expo.html" id="links">Our Expo</a></li>
+                        <li class="list-links"><a href="/src/pages/About_Us/About_Us.html" id="links">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="form-container">
+                    <h2>Contact Us</h2>
+                    <form action="" id="contact-form">
+                        <div id="form-one">
+                            <div id="name-div">
+                                <label for="name">Name</label>
+                                <input type="text" id="name-ip" minlength="5" required>        
+                            </div>
+                            <div id="mail-div">
+                                <label for="mail">Mail-ID</label>
+                                <input type="mail" id="mail-id-ip" required>
+                            </div>
+                            <div id="phone-no-div">
+                                <label for="phone-no">Contact No:</label>
+                                <input type="text" id="phone-no-ip" required>
+                            </div>        
+                        </div>
+                        <div id="form-two">
+                            <div id="selector-div">
+                                <label for="options" id="option_label">Choice:</label>
+                                <Select id="options" name="options">
+                                    <option value="Complaint">Complaint</option>
+                                    <option value="Opinion">Opinion</option>
+                                </Select>    
+                            </div>
+                            <div id="opinion-div">
+                                <label for="opinion">Description</label>
+                                <input type="text" id="opinion-ip" required>
+                            </div>
+                            <div id="submit-btn-div">
+                                <button id="submit-btn">Submit</button>
+                              
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <script type="module" src="contact.js"></script>
+</body>
+</html>

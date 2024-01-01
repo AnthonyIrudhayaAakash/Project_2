@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Edit_Stall.css">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rubik&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <title>Stall-Edit</title>
+</head>
+<body>
+
+    <div id="body-container">
+        <header>
+            <div id="header-container">
+                <img src="/src/config/logo_1.png" alt="" width="200" id="logo_png">
+    
+                <h1 id="header-element">Online Expo-2024</h1>
+                <nav>
+                    <ul id="nav-list">
+                        <li class="list-links"><a href="/src/pages/index/index.html" id="links">Login</a></li>
+                        <li class="list-links"><a href="/src/pages/Online_Expo/Online_Expo.html" id="links">Our Expo</a></li>
+                        <li class="list-links"><a href="/src/pages/About_Us/About_Us.html" id="links">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="form-container">
+                    <h2>Edit Your Stall :</h2>
+                    <form action="" id="stall-edit-form">
+                        <div id="form-one">
+                            <div id="edit-user-div">
+                                <label for="username">Username</label>
+                                <input type="text" id="edit-username-ip" minlength="5" required>        
+                            </div>
+                            <div id="edit-mail-div">
+                                <label for="mail">Mail-ID</label>
+                                <input type="mail" id="edit-mail-id-ip" required>
+                            </div>
+                            <div id="edit-stall-name-div">
+                                <label for="name">Stall Name:</label>
+                                <input type="text" id="edit-stall-name-ip" required>
+                            </div>
+
+                            <div id="edit-stall-id-div">
+                                <label for="id">Stall-ID</label>
+                                <input type="text" id="edit-stall-id-ip"  minlength="5" required>
+                            </div>
+                            <div id="edit-description-div">
+                                <label for="description">Description</label>
+                                <input type="text" id="edit-description-ip" required>
+
+                            </div>
+
+                        </div>
+                        <div id="form-two">
+                            <div id="edit-image-div">
+                                <label for="image">Stall Picture:<br></label>
+                                <input type="file" id="edit-image-ip" required>
+                            </div>
+                            <div id="edit-video-div">
+                                <label for="video">Stall Video<br></label>
+                                <input type="file" id="edit-video-ip" required>
+                            </div>
+                            <div id="edit-brochure-div">
+                                <label for="brochure">Stall Brochure<br></label>
+                                <input type="file" id="edit-brochure-ip" required>
+                            </div>
+                            <div id="edit-btn-div">
+                                <button id="edit-btn">Edit Details</button>
+                              
+                            </div>
+                        </div>
+                       
+                   
+                    </form>
+                </div>
+
+            </div>
+        </main>
+
+
+
+
+    </div>
+    
+
+
+
+
+    <script type="module" src="/src/pages/Edit_Stall/Edit_Stall.js"></script>
+</body>
+</html>

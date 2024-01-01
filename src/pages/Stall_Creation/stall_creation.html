@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stall_creation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rubik&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="body-container">
+        <header>
+            <div id="header-container">
+                <img src="logo_1.png" alt="" width="200" id="logo_png">
+    
+                <h1 id="header-element">Online Expo-2024</h1>
+                <nav>
+                    <ul id="nav-list">
+                        <li class="list-links"><a href="/src/pages/index/index.html" id="links">Login</a></li>
+                        <li class="list-links"><a href="/src/pages/contact/contact.html" id="links">Contact Us</a></li>
+                        <li class="list-links"><a href="/src/pages/About_Us/About_Us.html" id="links">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="main-container">
+                <div id="form-container">
+                    <h2>Stall Creation:</h2>
+                    <form action="" id="stall-creation-form">
+                        <div id="form-one">
+                            <div id="user-div">
+                                <label for="username">Username</label>
+                                <input type="text" id="username-ip" minlength="5" required>        
+                            </div>
+                            <div id="mail-div">
+                                <label for="mail">Mail-ID</label>
+                                <input type="mail" id="mail-id-ip" required>
+                            </div>
+                            <div id="stall-name-div">
+                                <label for="name">Stall Name:</label>
+                                <input type="text" id="stall-name-ip" required>
+                            </div>
+
+                            <div id="stall-id-div">
+                                <label for="id">Stall-ID</label>
+                                <input type="text" id="stall-id-ip"  minlength="5" required>
+                            </div>
+                            <div id="description-div">
+                                <label for="description">Description</label>
+                                <input type="text" id="description-ip" required>
+
+                            </div>
+
+                        </div>
+                        <div id="form-two">
+                            <div id="image-div">
+                                <label for="image">Stall Picture:<br></label>
+                                <input type="file" id="image-ip" required>
+                            </div>
+                            <div id="video-div">
+                                <label for="video">Stall Video<br></label>
+                                <input type="file" id="video-ip" required>
+                            </div>
+                            <div id="brochure-div">
+                                <label for="brochure">Stall Brochure<br></label>
+                                <input type="file" id="brochure-ip" required>
+                            </div>
+                            <div id="create-btn-div">
+                                <button id="create-btn">Create Stall</button>
+                              
+                            </div>
+                        </div>
+                       
+                   
+                    </form>
+                </div>
+
+            </div>
+        </main>
+
+
+
+
+    </div>
+    
+
+
+
+
+    <script type="module" src="stall_creation.js"></script>
+</body>
+</html>

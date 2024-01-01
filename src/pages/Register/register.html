@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rubik&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+    <title>Register-Expo_2024</title>
+</head>
+<body>
+    <div id="body-container">
+
+        <div id="header-container">
+            <img src="/src/config/logo_1.png" alt="" width="200" id="logo_png">
+
+            <h1 id="header-element">Online Expo-2024</h1>
+            <nav>
+                <ul id="nav-list">
+                    <li class="list-links"><a href="/src/pages/index/index.html" id="links">Login</a></li>
+                    <li class="list-links"><a href="/src/pages/About_Us/About_Us.html" id="links">About Us</a></li>
+                    <li class="list-links"><a href="/src/pages/contact/contact.html" id="links">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div id="child-container">
+            <div id="image-container-one">
+                <img id="image-one" src="/src/config/book_1.png" alt="" width="250">
+            </div>
+
+            <div id="register-form-div">
+                
+                <form action="" id="register-form">
+                    
+                    <div id="user-div">
+                        <input type="text" placeholder="Username" id="username"  minlength="5" required>
+                    </div>
+
+                    <div id="mail-div">
+                        <input type="email" placeholder="josh42@mail.com" id="mail-id" required>
+                    </div>
+                    <div id="password-div">
+                        <input type="password" id="password" placeholder="password" minlength="8" required>
+                        <input type="password" id="confirm-password" placeholder="confirm password" minlength="8" required>
+                    </div>
+
+                    <div id="selector-div">
+                        <label for="options" id="option_label">Role:</label>
+                        <Select id="options" name="options">
+                            <option value="User">User</option>
+                            <option value="Admin">Admin</option>
+                        </Select>    
+                    </div>
+
+                    
+
+                    <div id="sign_up-btn-div">
+                        <button id="sign_up_btn" type="submit"> Sign up</button>
+
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="image-container-two">
+                <img id="image-one" src="/src/config/book_1.png" alt="" width="250">
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script type="module" src="register.js"></script>
+    
+</body>
+</html>

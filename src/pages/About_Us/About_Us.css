@@ -1,0 +1,102 @@
+body{
+    background-color: #191d32;
+}
+#body-container{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+#header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo_png{
+    margin: 10px 20px;
+}
+#header-element{
+    color:#FFFFFE;
+    font-family: 'Diphylleia', serif;
+    animation-name: enlarger;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#nav-list{
+    display: flex;
+    list-style: none;
+}
+li a{
+    color:#FFFFFE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 10px 15px;
+    padding:10px 15px;
+    transition: transform 3s ease-in-out;
+    border-radius: 10px;
+}
+li a:hover{
+    transform: scale(1.4);
+    background-color:rgb(176, 134, 191) ;
+    
+    color:#191d32;
+}
+#section-one{
+    display: grid;
+    justify-content: center;
+    align-items: center ;
+}
+#heading-one-div,#heading-two-div, #heading-three-div,#heading-four-div, #end-slogan-div{
+    display: flex;
+    justify-content: center;
+}
+#heading-one, #heading-two, #heading-three, #heading-four{
+  
+    width: fit-content;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color:rgb(176, 134, 191) ;
+    
+    color:#191d32;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+}
+#paragraph-one, #paragraph-two, #paragraph-three, #paragraph-four,#paragraph-five, #paragraph-six{
+    color:#FFFFFE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+#subheading{
+    font-size: 35px;
+}
+#end-slogan{
+    font-family: 'Diphylleia', serif;
+    background-color:rgb(176, 134, 191) ;
+    
+    color:#191d32;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+@keyframes enlarger{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    40%{
+        transform: scale(1.2);
+        opacity: 1;
+        
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Rubik&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">    
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="body-container">
+
+        <div id="logo-container">
+            <img src="/src/config/logo_1.png" alt="" width="200">
+
+        </div>
+
+        <div id="child-container">
+
+            <div id="left-side-child">
+
+               <div id="child-one">
+                    <div id="login-slogan-div">
+                        <p id="login-slogan">Login to Explore the Exhibition</p>
+                    </div> 
+               </div>
+
+               <div id="expo-btn-div">
+                    <button id="expo-btn" type="submit">Expo-2024</button>
+                    
+               </div>
+               <div id="features-div">
+                    <img id="image-one" src="/src/config/book_1.png" alt="" width="200">
+
+                    <ul id="features">
+                        <li id="list-children"><span class="star-emoji">&#9733;</span> Live Events and Webinars</li>
+                        <li id="list-children"><span class="star-emoji">&#9733;</span> Networking Opportunities</li>
+                        <li id="list-children"><span class="star-emoji">&#9733;</span> Analytics and Reporting</li>
+                        <li id="list-children"><span class="star-emoji">&#9733;</span> Feedback and Surveys</li>
+                        <li id="list-children"><span class="star-emoji">&#9733;</span> Technical Support</li>
+                    </ul>
+                    <img id="image-two" src="/src/config/book_1.png" alt="" width="200">
+
+               </div>
+               
+            </div>
+
+            <div id="right-side-child">
+
+                <div id="login-form-div">
+                    <h4 class="h4-heading">Login</h4>
+                    
+                    <form action="" id="login-form">
+                        <div id="user-div">
+                            <input type="text" placeholder="username"  id="username" required>
+                        </div>
+                        <div id="password-div">
+                            <input type="password" placeholder="password" id="password" required>
+                        </div>
+                        <div id="remember-forget-div">
+
+                            <label class="remember-checkbox"><input type="checkbox">remember me<br></label>
+
+                            
+
+                        </div>
+                        <div id="login-btn-div">
+                            <button type="submit" id="login-btn">Login</button>
+                        </div>
+                        <div id="register-div">
+                            <p class="register-info">Don't have user account?&nbsp;</p>
+                            <a href="/src/pages/Register/register.html" class="register-link">Register</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+
+    <script type="module" src="index.js"></script>
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '0',
+            duration: 2500,
+            delay: 400
+        });
+        ScrollReveal().reveal('#logo-container',{ delay: 500 });
+        ScrollReveal().reveal('#child-one',{ delay: 500, origin:"left"});
+        ScrollReveal().reveal('#expo-btn',{ delay: 500, origin:"left"});
+        ScrollReveal().reveal('#login-form-div',{ delay: 500, origin:"right"});
+        
+    </script>
+</body>
+</html>

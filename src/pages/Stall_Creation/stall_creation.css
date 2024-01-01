@@ -1,0 +1,136 @@
+body{
+    background-color: #191d32;
+}
+#body-container{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+#header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo_png{
+    margin: 10px 20px;
+}
+#header-element{
+    color:#FFFFFE;
+    font-family: 'Diphylleia', serif;
+    animation-name: enlarger;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#nav-list{
+    display: flex;
+    list-style: none;
+}
+li a{
+    color:#FFFFFE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    margin: 10px 15px;
+    padding:10px 15px;
+    transition: transform 0.5s ease-in-out !important ;
+    border-radius: 10px;
+}
+li a:hover{
+    transform: scale(1.1) !important;
+    background-color:rgb(176, 134, 191) !important ;
+    
+    color:#191d32 !important;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color:#FFFFFE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+#stall-creation-form{
+    display: flex;
+    color:#FFFFFE;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/* #form-one, #form-two{
+    display: flex;
+    flex-wrap: wrap;
+} */
+#user-div, #mail-div, #stall-name-div, #stall-id-div, #description-div, #image-div, #video-div, #brochure-div{
+    width: 400px;
+    margin:10px 10px;
+}
+#form-one input{
+    width: 100%;
+    padding: 20px 20px;
+    border-style: none;
+    outline: none;
+    border-radius: 20px;
+   
+}
+#description-ip{
+    height: 10vh;
+}
+#image-ip, #video-ip, #brochure-ip{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #FFFFFE;
+    color: #191d32;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15px;
+    flex-wrap: wrap;
+    border-style: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+#create-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#create-btn{
+    background-color:rgb(176, 134, 191);
+    
+    color:#191d32;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px 10px;
+    transition: transform 0.5s ease-in-out;
+}
+#create-btn:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+@keyframes enlarger{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    40%{
+        transform: scale(1.2);
+        opacity: 1;
+        
+    }
+    60%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+
+}
